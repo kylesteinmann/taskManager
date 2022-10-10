@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from 'src/app/task.service';
 
@@ -12,5 +13,8 @@ export class TaskListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onStrikeout(index: number) {
+this.taskService.tasks[index].strikeoutStatus = true;
+console.log(this.taskService.tasks)
+}
 }

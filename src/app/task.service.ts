@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TaskService {
-tasks:any= [];
+tasks:any= [{}];
+strikeoutStatus:boolean=false;
   constructor() { }
 }

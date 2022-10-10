@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { TaskInputComponent } from './Components/task-input/task-input.component';
 import { TaskListComponent } from './Components/task-list/task-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TaskListComponent } from './Components/task-list/task-list.component';
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

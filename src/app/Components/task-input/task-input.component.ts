@@ -15,7 +15,7 @@ export class TaskInputComponent implements OnInit {
   ngOnInit(): void {}
 
   onAddTask() {
-    this.taskService.tasks.push(this.task);
+    this.taskService.tasks.push({task:this.task, strikeoutStatus:false});
     this.task = ""
   }
 }

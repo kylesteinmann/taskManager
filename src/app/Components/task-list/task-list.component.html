@@ -1,1 +1,7 @@
-<div mat-card *ngFor="let task of taskService.tasks">  {{task}} </div>
+<div
+mat-card
+*ngFor="let task of taskService.tasks; let i = index"
+(click)="onStrikeout(i)">
+
+<div [ngStyle]="{'font-decoration': taskService.tasks[i].strikeoutStatus ? 'none' : 'line-through' }">{{taskService.tasks[i].task}}
+   </div>
